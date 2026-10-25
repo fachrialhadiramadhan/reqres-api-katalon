@@ -18,8 +18,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('Users/Update User', [('baseUrl') : GlobalVariable.baseUrl, ('user_id') : 2, ('user_name') : 'aldirektur'
-            , ('user_job') : 'nganggur']))
+response = WS.sendRequest(findTestObject('Users/Update User', [('baseUrl') : GlobalVariable.baseUrl, ('user_id') : 99999999
+            , ('user_name') : 'aldirektur', ('user_job') : 'nganggur']))
 
 WS.verifyResponseStatusCode(response, 404)
 
